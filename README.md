@@ -3,4 +3,9 @@ Mobilenet v2 implementation in tensorflow
 
 This project is based on paper https://arxiv.org/abs/1801.04381
 
-Dependence: tensorflow>=1.3
+# Dependence: tensorflow>=1.3
+
+# Details: 
+Architecture:
+/home/yegensheng/Pictures/1.png
+Performance:
