@@ -7,5 +7,5 @@ This project is based on paper https://arxiv.org/abs/1801.04381
 
 # Details: 
 Architecture:
-/home/yegensheng/Pictures/1.png
+
 Performance:
