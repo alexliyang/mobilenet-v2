@@ -5,7 +5,7 @@ This project is based on paper https://arxiv.org/abs/1801.04381
 
 # Dependence: tensorflow>=1.3
 
-# Details: 
-Architecture:
+# Architecture:
+figures/1.png
 
-Performance:
+# Performance:
