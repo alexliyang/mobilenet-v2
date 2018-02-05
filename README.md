@@ -1,9 +1,10 @@
-# mobilenet-v2
+# MobileNet-v2 tensorflow
 Mobilenet v2 implementation in tensorflow
 
 This project is based on paper https://arxiv.org/abs/1801.04381
 
-# Dependence: tensorflow>=1.3
+# Dependence: 
+tensorflow>=1.3
 
 # Architecture: 
 Mobilenet v2 uses Inverted Residual Bottleneck
