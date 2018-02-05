@@ -11,5 +11,6 @@ Mobilenet v2 uses Inverted Residual Bottleneck
 ![image](https://github.com/shenduliandan/mobilenet-v2/blob/master/figures/1.png)
 
 # Performance:
-Comparision on Imagenet 
+Comparision on Imagenet
+
 ![image](https://github.com/shenduliandan/mobilenet-v2/blob/master/figures/2.png)
