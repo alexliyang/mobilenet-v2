@@ -2,7 +2,8 @@
 Mobilenet v2 implementation in tensorflow
 
 This project is based on paper https://arxiv.org/abs/1801.04381
-
+Segmentation: deeplabv3
+Detection: SSD
 # Dependence: 
 tensorflow>=1.3
 
