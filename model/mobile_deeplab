@@ -1,0 +1,32 @@
+import tensorflow as tf
+from tensorflow.contrib import slim
+
+from Lib.bench.config import args
+from Lib.net.mobilenet.utils import mobile, mobile_arg_scope, Block, bottleneck
+
+
+class Mobilenetv2(object):
+    def __init__(self, decay, root, num_class, training, reuse):
+        self.training = training
+        self.reuse = reuse
+        self.weight_decay = decay
+        self.root = root
+        self.num_class = num_class
+        self.outputs = None
+
+    def trunk(self, x):
+        with slim.arg_scope(mobile_arg_scope(
+                is_training=self.training,
+                weight_decay=self.weight_decay)):
+            blocks = [
+                Block('block1', bottleneck, [16, 1, 1]),
+                Block('block1', bottleneck, [24, 6, 2] + [24, 6, 2]),
+                Block('block1', bottleneck, [32, 6, 2] + [32, 6, 1] * 2),
+                Block('block1', bottleneck, [64, 6, 2] + [64, 6, 1] * 3),
+                Block('block1', bottleneck, [96, 6, 1] * 3),
+                Block('block1', bottleneck, [160, 6, 2] + [160, 6, 1] * 2),
+                Block('block1', bottleneck, [320, 6, 1] * 3),
+            ]
+            net, end_points = mobile(x, blocks, self.root, self.num_class,
+                                     self.training, self.reuse, 'mobilenetv2')
+            self.outputs = end_points
