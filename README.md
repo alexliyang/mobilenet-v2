@@ -6,6 +6,6 @@ This project is based on paper https://arxiv.org/abs/1801.04381
 # Dependence: tensorflow>=1.3
 
 # Architecture:
-figures/1.png
+mobilenet-v2/figures/1.png
 
 # Performance:
