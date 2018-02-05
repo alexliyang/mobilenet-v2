@@ -99,7 +99,7 @@ def mobile_arg_scope(
     }
 
     with slim.arg_scope(
-        [slim.conv2d, slim.separable_conv2d],
+        [slim.conv2d, slim.separable_conv2d, slim.fully_connected],
         weights_regularizer=slim.l2_regularizer(weight_decay),
         weights_initializer=slim.variance_scaling_initializer(),
         activation_fn=None,
